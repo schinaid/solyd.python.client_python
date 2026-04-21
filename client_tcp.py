@@ -11,4 +11,4 @@ def enviar_requisicao(HOST, PORTA, MENSAGEM):
         print("Ocorreu um erro.")
         print(Error)
 
-enviar_requisicao("127.0.0.1", 4433, "senhaSecreta")
+enviar_requisicao("127.0.0.1", 4466, "estou guadrando isso")
