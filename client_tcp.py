@@ -7,7 +7,8 @@ def enviar_requisicao(HOST, PORTA, MENSAGEM):
         client.send(MENSAGEM.encode('utf-8'))
         pacotes_recebidos = client.recv(1024).decode()
         print(pacotes_recebidos)
-    except:
+    except Exception as Error:
         print("Ocorreu um erro.")
+        print(Error)
 
-enviar_requisicao("google.com", 80, "GET / HTTP/3\nHost: www.google.com\n\n\n")
+enviar_requisicao("127.0.0.1", 4433, "senhaSecreta")
